@@ -1,8 +1,10 @@
 import Header from '../components/Header';
+import Bannier from '../components/Bannier';
 function Accueil() {
     return <div>
         <Header/>
-        <h1>Bienvenue dans le projet Investment</h1>
+        <Bannier/>
+        
     </div>
   }
   
