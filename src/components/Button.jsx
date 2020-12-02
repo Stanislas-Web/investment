@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-function Bannier({color, width, height, background, title, marginLeft, fontSize}) {
+function Button({color, width, height, background, title, marginLeft, fontSize}) {
 
     const ButtonStyle = styled.div`
     display:flex;
@@ -33,4 +33,4 @@ function Bannier({color, width, height, background, title, marginLeft, fontSize}
             </MyHover>
   }
   
-  export default Bannier
+  export default Button
