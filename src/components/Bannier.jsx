@@ -12,8 +12,11 @@ background-image: url(${img});
 `;
 
 const H1Style = styled.h1`
-// font-size: 15px;
-font-weight: 300;
+font-size: 48px;
+font-weight: 200;
+width:698px;
+line-height: 56px;
+text-align: center;
 font-family: "roboto", Helvetica Neue, Helvetica, sans-serif;
 color: white;
 `;
@@ -21,6 +24,7 @@ color: white;
 function Bannier() {
     return  <BannierStyle>
                 <H1Style> Nous rapprochons les entrepreneurs et investisseurs </H1Style>
+                
             </BannierStyle>
   }
   
