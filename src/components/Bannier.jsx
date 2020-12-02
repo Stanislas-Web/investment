@@ -15,12 +15,12 @@ background-image: url(${img});
 
 const H1Style = styled.h1`
 font-size: 48px;
-font-weight: 200;
 width:698px;
 line-height: 56px;
 text-align: center;
-font-family: "roboto", Helvetica Neue, Helvetica, sans-serif;
 color: white;
+font-weight: 100;
+font-family: 'Roboto', sans-serif;
 `;
 
 function Bannier() {
