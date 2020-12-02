@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import logo from '../assets/logo.png';
 import Link from 'next/link';
 import { useRouter } from "next/router";
+import Button from './Button';
 
 
 
@@ -33,7 +34,7 @@ li{
     color: black;
     a{
         text-decoration: none;
-        color: black;
+        color: #39374E;
     }
 }
 .active{
@@ -72,7 +73,8 @@ function Header() {
                         <a>Témoignages</a>
                         </Link>
                     </li>
-                
+                    <Button color="#39374E" width="150px" height="40px" background="white" title="Se Connecter" marginLeft="5px" fontSize="14px"/>
+                    <Button color="white" width="150px" height="40px" background="#2988CC" title="S'Inscrire" marginLeft="5px" fontSize="14px"/>
                  </NavStyle>
             </HeaderStyle>
   }
