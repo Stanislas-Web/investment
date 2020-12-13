@@ -2,16 +2,16 @@ import styled from 'styled-components';
 import bg1 from '../assets/bg.jpg';
 import bg2 from '../assets/bg2.jpg';
 import {Carousel} from 'react-bootstrap';
-import bg3 from '../assets/bg3.jpg';
-import bg4 from '../assets/bg4.jpg';
-import bg6 from '../assets/bg6.jpg';
-import bg7 from '../assets/bg7.jpg';
-import bg5 from '../assets/bg5.jpg';
+import slide1 from '../assets/slide1.jpg';
+import slide2 from '../assets/slide2.jpg';
+import slide3 from '../assets/slide3.jpg';
+
+
 
 const TitleCarousel = styled.h3`
   font-family: Roboto;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 48px;
 `;
 
@@ -48,7 +48,7 @@ function CarouselBannier() {
     <CarouselStyle>
       <img
         className="d-block w-100 h-100"
-        src={bg1}
+        src={slide2}
         alt="Third slide"
       />
   
@@ -69,7 +69,7 @@ function CarouselBannier() {
     <CarouselStyle>
       <img
         className="d-block w-100"
-        src={bg4}
+        src={slide1}
         alt="Third slide"
       />
   
@@ -86,7 +86,7 @@ function CarouselBannier() {
     <CarouselStyle>
       <img
         className="d-block w-100"
-        src={bg2}
+        src={slide3}
         alt="Third slide"
       />
   
