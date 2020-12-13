@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import bg1 from '../assets/bg.jpg';
 import bg2 from '../assets/bg2.jpg';
 import {Carousel} from 'react-bootstrap';
-import slide1 from '../assets/slide1.jpg';
+import slide4 from '../assets/slide4.jpg';
 import slide2 from '../assets/slide2.jpg';
 import slide3 from '../assets/slide3.jpg';
 
@@ -69,7 +69,7 @@ function CarouselBannier() {
     <CarouselStyle>
       <img
         className="d-block w-100"
-        src={slide1}
+        src={slide4}
         alt="Third slide"
       />
   
