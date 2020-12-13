@@ -1,46 +1,105 @@
 import styled from 'styled-components';
-import img from '../assets/bg.jpg';
+import bg1 from '../assets/bg.jpg';
+import bg2 from '../assets/bg2.jpg';
 import {Carousel} from 'react-bootstrap';
+import bg3 from '../assets/bg3.jpg';
+import bg4 from '../assets/bg4.jpg';
+import bg6 from '../assets/bg6.jpg';
+import bg7 from '../assets/bg7.jpg';
+import bg5 from '../assets/bg5.jpg';
 
+const TitleCarousel = styled.h3`
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+`;
 
+const CarouselStyle = styled(Carousel.Item)`
+  height: 500px;
+  width:  100%;
 
+`;
+
+const ButtonInvestir = styled.div`
+  color: white;
+  width: 300px;
+  height: 50px;
+  background: #2988CC;
+  border: 1px solid #2988CC;
+  border-radius: 5px;
+  font-weight: 300;
+  font-size: 18;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+`;
+
+const AlignButton = styled.div`
+  width: 100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+`;
 function CarouselBannier() {
     return  <Carousel>
-    <Carousel.Item>
+    <CarouselStyle>
       <img
-        className="d-block w-100"
-        src={img}
-        alt="First slide"
-      />
-      <Carousel.Caption>
-        <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-      </Carousel.Caption>
-    </Carousel.Item>
-    <Carousel.Item>
-      <img
-        className="d-block w-100"
-        src="holder.js/800x400?text=Second slide&bg=282c34"
+        className="d-block w-100 h-100"
+        src={bg1}
         alt="Third slide"
       />
   
       <Carousel.Caption>
-        <h3>Second slide label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <TitleCarousel>Nous rapprochons les entrepreneurs et investisseurs </TitleCarousel>
+      <br/>
+      <AlignButton>
+            <ButtonInvestir>Investir</ButtonInvestir>
+        </AlignButton>
+        <br/>
+        <br/>
+
+      
+      
+
       </Carousel.Caption>
-    </Carousel.Item>
-    <Carousel.Item>
+    </CarouselStyle>
+    <CarouselStyle>
       <img
         className="d-block w-100"
-        src="holder.js/800x400?text=Third slide&bg=20232a"
+        src={bg4}
         alt="Third slide"
       />
   
       <Carousel.Caption>
-        <h3>Third slide label</h3>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <TitleCarousel>Nous rapprochons les entrepreneurs et investisseurs </TitleCarousel>
+      <br/>
+      <AlignButton>
+            <ButtonInvestir>Investir</ButtonInvestir>
+        </AlignButton>
+        <br/>
+        <br/>
       </Carousel.Caption>
-    </Carousel.Item>
+    </CarouselStyle>
+    <CarouselStyle>
+      <img
+        className="d-block w-100"
+        src={bg2}
+        alt="Third slide"
+      />
+  
+      <Carousel.Caption>
+      <TitleCarousel>Nous rapprochons les entrepreneurs et investisseurs </TitleCarousel>
+      <br/>
+      <AlignButton>
+            <ButtonInvestir>Investir</ButtonInvestir>
+        </AlignButton>
+        <br/>
+        <br/>
+      </Carousel.Caption>
+    </CarouselStyle>
   </Carousel>
   }
   

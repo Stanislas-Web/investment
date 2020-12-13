@@ -1,6 +1,7 @@
+// import { Carousel } from 'react-bootstrap';
 import styled from 'styled-components';
 import img from '../assets/bg.jpg';
-import Button from './Button';
+import Carousel from './Carousel'
 
 const BannierStyle = styled.div`
 display:flex;
@@ -24,11 +25,12 @@ font-family: 'Roboto', sans-serif;
 `;
 
 function Bannier() {
-    return  <BannierStyle>
-                <H1Style> Nous rapprochons les entrepreneurs et investisseurs </H1Style>
-                <br/>
-                <Button color="white" width="200px" height="50px" title="Investir" background="#2988CC" marginLeft="0" fontSize="18px"/>
-            </BannierStyle>
+    return <Carousel/>
+    // return  <BannierStyle>
+    //             <H1Style> Nous rapprochons les entrepreneurs et investisseurs </H1Style>
+    //             <br/>
+    //             <Button color="white" width="200px" height="50px" title="Investir" background="#2988CC" marginLeft="0" fontSize="18px"/>
+    //         </BannierStyle>
   }
   
   export default Bannier
